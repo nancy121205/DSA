@@ -41,7 +41,7 @@ int main(){
 
     int oldDiff,newDiff,length=2,maxLength=2;
 
-    for(int i=1;i<n;i++){
+    for(int i=1;i<n;i++){                //O(n)
 
         oldDiff=arr[i]-arr[i-1];
         newDiff=arr[i+1]-arr[i];
