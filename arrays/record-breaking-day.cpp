@@ -51,7 +51,7 @@ int main(){
 
     int days=0, maxNo=arr[0];
 
-    for(int i=0;i<n;i++){
+    for(int i=0;i<n;i++){               //O(n)
         if(i==0){
             if(arr[i]>arr[i+1]){
                 days++;
