@@ -17,8 +17,7 @@ int main(){
 
     int maxSum=INT_MIN;
     int currSum=0;
-    //kadane's algo
-    for(int i=0;i<size;i++){
+    for(int i=0;i<size;i++){                //kadane's algorithm    O(n)
         currSum+=arr[i];
         if(currSum<=0){
             currSum=0;
@@ -26,7 +25,7 @@ int main(){
         maxSum=max(maxSum,currSum);
     }
 
-    // for(int i=0;i<size;i++){             //better solution
+    // for(int i=0;i<size;i++){             //better solution        O(n^2)
     //     int sum=0;
     //     for(int j=i;j<size;j++){
     //         sum+=arr[j];
@@ -34,7 +33,7 @@ int main(){
     //     }
     // }
 
-    // for(int i=0;i<size;i++){             //brute force approach
+    // for(int i=0;i<size;i++){             //brute force approach    O(n^3)
     //     for(int j=i;j<size;j++){
     //         int sum=0;
     //         for(int k=i;k<=j;k++){
