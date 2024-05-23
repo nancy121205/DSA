@@ -1,3 +1,24 @@
+/*
+
+    Given an array arr[] of size N. The task is to find the first repeating element in an array of integers, i.e., an element that occurs more than once 
+    and whose index of first occurrence is smallest. 
+    Constraints 
+    1 <= N <= 106 
+    0 <= Ai <= 106 
+    
+    Example 
+    
+    Input: 
+    7 
+    1 5 3 4 3 5 6 
+    
+    Output: 
+    2 
+    
+    Explanation: 
+    5 is appearing twice and its first appearance is at index 2 which is less than 3 whose first occurring index is 3. 
+
+*/
 #include<iostream>
 using namespace std;
 
@@ -28,7 +49,8 @@ int main(){
             break;
         }
         else{
-            copy[arr[i]]=arr[i];            //creating an another array and storing numbers one by one of arr to copy, suppose at index 4, the number is 8, and 8 is also repeated at index 10, thus we can find out first occurence of number
+            copy[arr[i]]=arr[i];            //creating an another array and storing numbers one by one of arr to copy, suppose at index 4,
+                                            //the number is 8, and 8 is also repeated at index 10, thus we can find out first occurence of number
         }
     }    
 
